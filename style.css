@@ -126,11 +126,13 @@ a:hover {
 
 }
 
-.about-me>h1 {
+.about-me h1,
+.recentProjects h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     font-size: 80px;
     margin-bottom: 30px;
+    padding-top: 50px;
 }
 
 
