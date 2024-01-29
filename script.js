@@ -13,3 +13,13 @@ sidebarToggleBtn.addEventListener('click', function () {
 sidebarCloseBtn.addEventListener('click', function () {
     sidebar.classList.remove("show-sidebar");
 })
+
+
+
+
+const navContainer = document.querySelector(".nav-container");
+document.addEventListener('scroll', () => {
+    navContainer.style.backgroundColor = "red";
+});
+
+
