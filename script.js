@@ -14,12 +14,13 @@ sidebarCloseBtn.addEventListener('click', function () {
     sidebar.classList.remove("show-sidebar");
 })
 
-
-
-
-const navContainer = document.querySelector(".nav-container");
-document.addEventListener('scroll', () => {
-    navContainer.style.backgroundColor = "red";
-});
-
-
+function changeBg() {
+    var navbar = document.getElementById("navbar");
+    var scrollValue = window.scrollY;
+    if (scrollValue < 150) {
+        navbar.classList.remove('bgColor');
+    } else {
+        navbar.classList.add('bgColor');
+    }
+}
+window.addEventListener('scroll', changeBg)

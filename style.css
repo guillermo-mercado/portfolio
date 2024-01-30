@@ -62,8 +62,6 @@ a {
     margin-right: 0px;
     height: 64px;
     margin-right: 0px;
-    color: black;
-
 }
 
 .nav-main {
@@ -89,7 +87,7 @@ a:link {
 
 a:visited,
 a:active {
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -248,4 +246,9 @@ a:hover {
     .sidebar {
         width: 100%;
     }
+}
+
+.bgColor {
+    transition: all 3s;
+    backdrop-filter: blur(10px);
 }
