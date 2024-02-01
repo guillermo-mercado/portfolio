@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#contact {
+    min-height: 100vh;
+    padding: 2em;
+    background-color: #3887BE;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside ul li {
+    width: auto;
+    padding: 2em;
+}
+
+
+#contact-form {
+    background: #fff;
+    width: 450px;
+    padding: 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 2em rgba(0, 0, 0.3);
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#contact h3 {
+    max-width: 400px;
+    line-height: 27px;
+    color: #F8FAE5;
+    margin: 1em 0 2em 0;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    justify-items: flex-start;
+    flex-direction: column;
+}
+
+#contact input,
+#contact #fmessage {
+    border: none;
+    padding: 0.8em;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0.1em 0 0.1em 0;
+    font-size: 1.1em;
+    background: #eee;
+    color: #969696;
+}
+
+#contact label {
+    color: #a0a0a0;
+}
+
+#contact #fmessage {
+    resize: none;
+    height: 8em;
+    font-family: sans-serif;
+}
+
+#contact input:focus,
+#contact #fmessage:focus {
+    outline: none;
+}
+
+#contact input::placeholder,
+#contact #fmessage::placeholder {
+    color: #bababa;
+}
+
+#contact button {
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    padding: 0.8em;
+    background-color: #38419D;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: white;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background-color: #200E3A;
+}
+
+@media screen and (max-width:512px) {
+    #contact {
+        font-size: 14px;
+    }
+
+}
