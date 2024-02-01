@@ -15,18 +15,15 @@ ul {
 #contact {
     min-height: 100vh;
     padding: 2em;
-    background-color: #3887BE;
+    background-color: #FFF6E9;
     display: flex;
     gap: 100px;
     justify-content: center;
     justify-items: center;
 }
 
-
-#contactHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aside {
+    height: 500px;
 }
 
 .aside ul li {
@@ -34,29 +31,26 @@ ul {
     padding: 2em;
 }
 
-
-#contact-form {
-    background: #fff;
-    width: 450px;
-    padding: 2.5em;
-    border-radius: 10px;
-    box-shadow: 0 0 2em rgba(0, 0, 0.3);
-}
-
-#contact h1 {
+.aside h1 {
     font-size: 2.5em;
     display: flex;
     justify-content: center;
 }
 
-#contact h3 {
+.aside h3 {
     max-width: 400px;
     line-height: 27px;
-    color: #F8FAE5;
+    color: #0D9276;
     margin: 1em 0 2em 0;
 }
 
 #contact-form {
+    background: #fff;
+    height: 580px;
+    width: 450px;
+    padding: 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 2em rgb(113, 106, 106);
     display: flex;
     justify-content: center;
     justify-items: flex-start;
@@ -69,42 +63,63 @@ ul {
     padding: 0.8em;
     width: 100%;
     border-radius: 5px;
-    margin: 0.1em 0 0.1em 0;
-    font-size: 1.1em;
+    margin: 0 0 1.85em 0;
+    font-size: 1em;
     background: #eee;
-    color: #969696;
+    color: black;
 }
 
 #contact label {
     color: #a0a0a0;
+    height: 5px;
+}
+
+
+#contact-form #fname {
+    background-image: url('user-regular.svg');
+    background-size: 13px;
+    background-position: 15px 17px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#contact-form #femail {
+    background-image: url('envelope-regular.svg');
+    background-size: 15px;
+    background-position: 15px 18px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
 }
 
 #contact #fmessage {
     resize: none;
     height: 8em;
     font-family: sans-serif;
+    margin-bottom: 70px;
 }
 
 #contact input:focus,
 #contact #fmessage:focus {
-    outline: none;
+    outline: solid #40A2E3;
 }
 
 #contact input::placeholder,
 #contact #fmessage::placeholder {
     color: #bababa;
+    font-size: 15px;
 }
 
-#contact button {
+#contact #cfSubmitBtn {
     border: none;
     cursor: pointer;
     width: 150px;
     padding: 0.8em;
-    background-color: #38419D;
+    background-color: #40A2E3;
     border-radius: 8px;
-    font-size: 1.1em;
+    font-size: 1em;
     color: white;
     transition: 0.3s;
+    margin-left: 225px;
 }
 
 #contact button:hover {
@@ -116,4 +131,20 @@ ul {
         font-size: 14px;
     }
 
+}
+
+.contactNavbar {
+    height: 80px;
+}
+
+#phoneNumber,
+#liLocation {
+    display: flex;
+    gap: 15px;
+}
+
+#phnumber,
+#plocation {
+    width: 200px;
+    padding-top: 5px;
 }
