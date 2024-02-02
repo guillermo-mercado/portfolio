@@ -1,5 +1,7 @@
 body {
     font-family: sans-serif;
+    height: 100vh;
+    background-color: #FFF6E9;
 }
 
 * {
@@ -12,9 +14,12 @@ ul {
     list-style-type: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 #contact {
-    min-height: 100vh;
-    padding: 2em;
+    padding: 3em 2em 2em 2em;
     background-color: #FFF6E9;
     display: flex;
     gap: 100px;
@@ -74,7 +79,6 @@ ul {
     height: 5px;
 }
 
-
 #contact-form #fname {
     background-image: url('user-regular.svg');
     background-size: 13px;
@@ -91,25 +95,25 @@ ul {
     padding-left: 40px;
 }
 
-#contact #fmessage {
+#contact-form #fmessage {
     resize: none;
     height: 8em;
     font-family: sans-serif;
     margin-bottom: 70px;
 }
 
-#contact input:focus,
-#contact #fmessage:focus {
+#contact-form input:focus,
+#contact-form #fmessage:focus {
     outline: solid #40A2E3;
 }
 
-#contact input::placeholder,
-#contact #fmessage::placeholder {
+#contact-form input::placeholder,
+#contact-form #fmessage::placeholder {
     color: #bababa;
     font-size: 15px;
 }
 
-#contact #cfSubmitBtn {
+#contact-form #cfSubmitBtn {
     border: none;
     cursor: pointer;
     width: 150px;
@@ -122,21 +126,11 @@ ul {
     margin-left: 225px;
 }
 
-#contact button:hover {
+#contact-form #cfSubmitBtn:hover {
     background-color: #200E3A;
 }
 
-@media screen and (max-width:512px) {
-    #contact {
-        font-size: 14px;
-    }
-
-}
-
-.contactNavbar {
-    height: 80px;
-}
-
+/* ICONS ON CONTACT-FORM*/
 #phoneNumber,
 #liLocation {
     display: flex;
@@ -147,4 +141,77 @@ ul {
 #plocation {
     width: 200px;
     padding-top: 5px;
+}
+
+/* NAVBAR */
+.contactNavbar {
+    height: 60px;
+    background-image: linear-gradient(#BBE2EC, #FFF6E9);
+}
+
+.nav-container {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-row {
+    display: flex;
+    gap: 80px;
+    height: 60px;
+}
+
+.nav-main {
+    display: inline-flex;
+    justify-content: center;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/*nav-bar links Settings*/
+a:link {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited,
+a:active {
+    color: black;
+}
+
+a:hover {
+    color: #40A2E3;
+}
+
+/* sidebar for small screens */
+#sidebarToggleBtn {
+    background-color: transparent;
+    border-color: transparent;
+    right: 0px;
+    top: 0px;
+    width: 14px;
+    height: 15px;
+}
+
+.sidebarCloseBtn {
+    background-color: transparent;
+    border-color: transparent;
+    right: 0px;
+    top: 0px;
+    width: 14px;
+    height: 15px;
+}
+
+@media screen and (max-width:512px) {
+    #contact {
+        font-size: 14px;
+    }
 }
