@@ -10,9 +10,9 @@
 
 .gradient-background {
     z-index: -1;
-    background: linear-gradient(300deg, #164863, #427D9D, #ef8172);
+    background: linear-gradient(300deg, #0D9276, #40A2E3, #FFF6E9);
     background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+    animation: gradient-animation 15s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -84,16 +84,16 @@ a:link {
 }
 
 a:link {
-    color: #ff0000;
+    color: black;
 }
 
 a:visited,
 a:active {
-    color: white;
+    color: black;
 }
 
 a:hover {
-    color: #ffcc00;
+    color: #FFF6E9;
 }
 
 
