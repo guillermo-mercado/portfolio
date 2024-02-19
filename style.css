@@ -273,7 +273,7 @@ a:hover {
     border-radius: 10px;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0;
-    height: 400px;
+    height: 370px;
     width: 360px;
     border: none;
     object-position: 50% 50%;
@@ -281,8 +281,9 @@ a:hover {
 }
 
 .project1 {
-    height: 600px;
-    width: 360px;
+    height: 500px;
+    width: 400px;
+    /* min-width: 400px; */
     border-radius: 10px;
     /* border: #164863 1px solid; */
     background-color: white;
@@ -331,7 +332,7 @@ a:hover {
 .gridContainerProjects {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 80px;
+    gap: 40px;
 }
 
 .projectEffect1 {
@@ -349,3 +350,121 @@ a:hover {
     /* Safari 3-8 */
     transform: scale(1.1);
 }
+
+footer {
+    width: 75%;
+    margin: auto;
+    padding: 50px 0 50px;
+}
+
+.footer-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 400px;
+    align-content: center;
+
+}
+
+.footer-connections {
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    width: 100px;
+    gap: 25px;
+}
+
+.left {
+    display: flexbox;
+}
+
+.name-footer {
+    display: grid;
+    grid-template-columns: 150px 250px;
+
+}
+
+.footer-1 {
+    grid-row: 1/4;
+}
+
+.footer-2 {
+    height: fit-content;
+    margin-top: 18px;
+}
+
+.right h3 {
+    margin: 18px 0 9px 18px;
+    width: fit-content;
+}
+
+.right p {
+    margin-left: 18px;
+    width: fit-content;
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .sidebar {
+        width: 400px;
+    }
+
+}
+
+/*Small screes Phones*/
+@media only screen and (max-width:800px) {
+
+    .gridContainerProjects {
+        width: 250px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+        height: fit-content;
+    }
+
+    .grid-container .div {
+        width: 100px;
+    }
+
+    .recentProjects {
+        height: fit-content;
+        margin: 0px;
+        padding: auto;
+        align-items: center;
+    }
+
+    .recentProjects h1 {
+        font-size: 18px;
+
+
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .right h3,
+    .right p {
+        margin-left: 0px;
+    }
+}
+
+
+
+/* 
+@media only screen and (min-width:600px) and (max-width: 768px) {
+    .grid.project1 {
+        width: 500px;
+    }
+} */
+
+/* Small screens */
+/*@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* iPads and Tablets */
+/* @media screen and (min-width: 481px) and (max-width: 768px) {}
