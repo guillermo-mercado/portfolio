@@ -417,9 +417,9 @@ footer {
 @media only screen and (max-width:800px) {
 
     .gridContainerProjects {
-        width: 250px;
+        /* width: 250px; */
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 0px;
         grid-template-rows: 1fr 1fr 1fr;
         margin: auto;
         height: fit-content;
