@@ -192,10 +192,11 @@ a:hover {
 .sidebarCloseBtn {
     background-color: transparent;
     border-color: transparent;
-    right: 0px;
+    right: 5px;
     top: 0px;
     width: 14px;
     height: 15px;
+
 }
 
 .sidebar {
@@ -225,12 +226,13 @@ a:hover {
 }
 
 
-/* Desktop and Large screens
-@media screen and (min-width: 1025px) {
+/* Desktop and Large screens */
+@media only screen and (min-width: 1025px) {
     #sidebarToggleBtn {
         display: none;
     }
-} */
+}
+
 .bgColor {
     transition: all 1s;
     backdrop-filter: blur(10px);
@@ -384,7 +386,7 @@ footer {
 
 
 /*Small screes Phones*/
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
 
     .gridContainerProjects {
         width: 400px;
@@ -469,17 +471,24 @@ footer {
         width: 100%;
     }
 
+
+
     .nav-row {
         display: none;
+
     }
 
-    .nav-container button {
-        align-items: end;
-        margin-top: 15px;
-    }
+
 
     .profile-photo {
         width: 250px;
+    }
+
+    #sidebarToggleBtn {
+        margin-top: 18px;
+        position: absolute;
+        /* ABSOLUTE,the right property sets the right edge of an element to an unit to the right of the right edge of its nearest positioned ancestor (nav-row). */
+        right: 25px;
     }
 }
 
