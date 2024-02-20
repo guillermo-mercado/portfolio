@@ -1,8 +1,8 @@
-@media screen and (min-width: 650px) {
+/* @media screen and (min-width: 650px) {
     .sidebar {
         width: 400px;
     }
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
@@ -225,30 +225,12 @@ a:hover {
 }
 
 
-/* Desktop and Large screens */
+/* Desktop and Large screens
 @media screen and (min-width: 1025px) {
     #sidebarToggleBtn {
         display: none;
     }
-}
-
-/* Small screens */
-/*@media screen and (min-width: 769px) and (max-width: 1024px) {}
-
-/* iPads and Tablets */
-/* @media screen and (min-width: 481px) and (max-width: 768px) {}
-
-/* Mobile devices */
-@media screen and (max-width: 512px) {
-    .nav-row {
-        display: none;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-}
-
+} */
 .bgColor {
     transition: all 1s;
     backdrop-filter: blur(10px);
@@ -266,8 +248,6 @@ a:hover {
     height: 800px;
 
 }
-
-
 
 .iframe {
     border-radius: 10px;
@@ -358,13 +338,11 @@ footer {
 }
 
 .footer-container {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     height: 400px;
     align-content: center;
-
 }
 
 .footer-connections {
@@ -405,19 +383,11 @@ footer {
 }
 
 
-
-@media screen and (min-width: 650px) {
-    .sidebar {
-        width: 400px;
-    }
-
-}
-
 /*Small screes Phones*/
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
 
     .gridContainerProjects {
-        /* width: 250px; */
+        width: 400px;
         display: grid;
         grid-template-columns: 0px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -425,11 +395,28 @@ footer {
         height: fit-content;
     }
 
-    .grid-container .div {
-        width: 100px;
+    .grid-container {
+        width: 90%;
+        /* margin: 0 50px 0 50px; */
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 70px 70px 40px 70px 70px;
+        /* column-gap: 60px; */
+        row-gap: 5px;
+        font-size: 14px;
+    }
+
+    .about-me {
+        height: auto;
+    }
+
+    .about-me h1 {
+        font-size: 25px;
     }
 
     .recentProjects {
+        width: 100%;
         height: fit-content;
         margin: 0px;
         padding: auto;
@@ -438,8 +425,6 @@ footer {
 
     .recentProjects h1 {
         font-size: 18px;
-
-
     }
 
     .footer-container {
@@ -452,9 +437,51 @@ footer {
     .right p {
         margin-left: 0px;
     }
+
+    footer {
+        width: 90%;
+        /* margin-left: 25px; */
+    }
+
+    .works-certifications {
+        height: auto;
+        width: 100%;
+    }
+
+    .works-certifications ul {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .tech-skills {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        column-gap: 50px;
+        row-gap: 15px;
+        width: 90%;
+
+    }
+
+
+    .nav-container {
+        width: 100%;
+    }
+
+    .nav-row {
+        display: none;
+    }
+
+    .nav-container button {
+        align-items: end;
+        margin-top: 15px;
+    }
+
+    .profile-photo {
+        width: 250px;
+    }
 }
-
-
 
 /* 
 @media only screen and (min-width:600px) and (max-width: 768px) {
