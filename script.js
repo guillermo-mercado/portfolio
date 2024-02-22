@@ -19,9 +19,13 @@ sidebarCloseBtn.addEventListener('click', function () {
 function changeBg() {
     var navbar = document.getElementById("navbar");
     var scrollValue = window.scrollY;
+    // console.log(scrollValue)
     if (scrollValue < 150) {
         navbar.classList.remove('bgColor');
-    } else {
+    }
+    // else if (scrollValue>664){ cambiar el hover de color blanco para azul
+    // o verde}
+    else {
         navbar.classList.add('bgColor');
     }
 }
@@ -33,10 +37,12 @@ var ex2 = document.querySelector(".ex2")
 var ex3 = document.querySelector(".ex3")
 
 ex1.addEventListener('mouseenter', (event) => {
+    ex1.classList.add('projectEffect2')
     ex2.classList.add('projectEffect1');
     ex3.classList.add('projectEffect1');
 })
 ex1.addEventListener("mouseleave", (e) => {
+    ex1.classList.remove("projectEffect2")
     ex2.classList.remove("projectEffect1")
     ex3.classList.remove('projectEffect1');
 });
