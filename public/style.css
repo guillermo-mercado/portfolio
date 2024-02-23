@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     height: 100vh;
-    background-color: #FFF6E9;
+    background-color: #f3f3f3;
 }
 
 * {
@@ -20,7 +20,7 @@ li {
 
 #contact {
     padding: 3em 2em 2em 2em;
-    background-color: #FFF6E9;
+    background-color: #f3f3f3;
     display: flex;
     gap: 100px;
     justify-content: center;
@@ -82,7 +82,7 @@ li {
 #contact-form #fname {
     background-image: url('user-regular.svg');
     background-size: 13px;
-    background-position: 15px 17px;
+    background-position: 15px 14px;
     background-repeat: no-repeat;
     padding-left: 40px;
 }
@@ -90,9 +90,10 @@ li {
 #contact-form #femail {
     background-image: url('envelope-regular.svg');
     background-size: 15px;
-    background-position: 15px 18px;
+    background-position: 15px 15px;
     background-repeat: no-repeat;
     padding-left: 40px;
+
 }
 
 #contact-form #fmessage {
@@ -146,7 +147,7 @@ li {
 /* NAVBAR */
 .contactNavbar {
     height: 60px;
-    background-image: linear-gradient(#BBE2EC, #FFF6E9);
+    background-image: linear-gradient(#BBE2EC, #f3f3f3);
 }
 
 .nav-container {
@@ -210,8 +211,84 @@ a:hover {
     height: 15px;
 }
 
-@media screen and (max-width:512px) {
+@media screen and (max-width:700px) {
+    .contactNavbar {
+        width: 100%;
+    }
+
     #contact {
         font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
     }
+
+    .aside {
+        width: 90%;
+        margin: auto;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside h1 {
+        width: fit-content;
+        align-content: center;
+    }
+
+    .aside h3 {
+        width: fit-content;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: center;
+        font-size: 12.5px;
+    }
+
+    #phoneNumber {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #liLocation {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #plocation {
+        width: auto;
+        padding: 0%;
+    }
+
+    #liSocialmedia {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    #phnumber {
+        width: auto;
+        padding: 0%;
+    }
+
+    #aSocialmedia {
+        height: fit-content;
+    }
+
+
+
+
+
+
 }

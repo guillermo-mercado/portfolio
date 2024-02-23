@@ -323,7 +323,6 @@ a:hover {
     border: #a6a9aa solid 1px;
 }
 
-
 .project1 {
     transition: transform .2s;
 }
@@ -341,8 +340,6 @@ a:hover {
 footer {
     width: 100%;
     background-color: #f3f3f3;
-    ;
-    ;
     /* height: 400px; */
 }
 

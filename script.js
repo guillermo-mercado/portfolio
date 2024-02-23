@@ -29,6 +29,13 @@ function changeBg() {
         navbar.classList.add('bgColor');
     }
 }
+
+// const iframeId = document.getElementById("iframeId-1");
+// iframeId.addEventListener('click', function () {
+//     var redirectWindow = window.open("https://github.com/guillermo-mercado/dice", "_blank");
+//     redirectWindow.location;
+// })
+
 window.addEventListener('scroll', changeBg)
 
 // --------Recent Projects animation MOUSEOVER/MOUSELEAVE--------
