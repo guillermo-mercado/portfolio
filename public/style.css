@@ -124,7 +124,7 @@ li {
     font-size: 1em;
     color: white;
     transition: 0.3s;
-    margin-left: 225px;
+    /* margin-left: 220px; */
 }
 
 #contact-form #cfSubmitBtn:hover {
@@ -217,18 +217,17 @@ a:hover {
     }
 
     #contact {
+        width: 100%;
+        margin: auto;
         font-size: 14px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-
     }
 
     .aside {
-        width: 90%;
-        margin: auto;
+        width: 100%;
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -255,14 +254,14 @@ a:hover {
     #phoneNumber {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 7px;
         align-items: center;
     }
 
     #liLocation {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 7px;
         align-items: center;
     }
 
@@ -274,7 +273,7 @@ a:hover {
     #liSocialmedia {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 7px;
     }
 
     #phnumber {
@@ -286,9 +285,8 @@ a:hover {
         height: fit-content;
     }
 
-
-
-
-
-
+    #contact-form {
+        width: 95%;
+        height: 470px;
+    }
 }
