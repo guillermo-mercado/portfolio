@@ -541,3 +541,10 @@ footer {
 
 /* iPads and Tablets */
 /* @media screen and (min-width: 481px) and (max-width: 768px) {}
+
+*/
+
+.mapa{
+    height: 400px;
+    border-radius: 0.5rem;
+}
